@@ -104,7 +104,7 @@ const ProductForm = React.memo<{
 
     return (
       <form onSubmit={onSubmit} className="space-y-4">
-        <div className="grid grid-cols-2 gap-4">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
           <div className="space-y-2">
             <Label htmlFor={`${isEdit ? "edit-" : ""}name`}>Product Name</Label>
             <Input
@@ -135,7 +135,7 @@ const ProductForm = React.memo<{
           />
         </div>
 
-        <div className="grid grid-cols-3 gap-4">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
           <div className="space-y-2">
             <Label htmlFor={`${isEdit ? "edit-" : ""}price`}>Price (Rs.)</Label>
             <Input
@@ -239,7 +239,7 @@ const ProductForm = React.memo<{
 
           {/* Image Preview */}
           {formData.images.length > 0 && (
-            <div className="grid grid-cols-4 gap-4 mt-4">
+            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 mt-4">
               {formData.images.map((image, index) => (
                 <div key={index} className="relative group">
                   <Image
@@ -666,7 +666,7 @@ export function ProductManagement(): ReactElement {
     <div className="space-y-6">
       <Card>
         <CardHeader>
-          <div className="flex items-center justify-between">
+          <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3">
             <CardTitle>Product Management</CardTitle>
             <Dialog open={isAddDialogOpen} onOpenChange={setIsAddDialogOpen}>
               <DialogTrigger asChild>
@@ -696,8 +696,8 @@ export function ProductManagement(): ReactElement {
           </div>
         </CardHeader>
         <CardContent>
-          <div className="flex items-center space-x-2 mb-6">
-            <div className="relative flex-1 max-w-sm">
+          <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-2 mb-6">
+            <div className="relative flex-1 sm:max-w-sm">
               <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400 h-4 w-4" />
               <Input
                 placeholder="Search products..."
@@ -708,7 +708,7 @@ export function ProductManagement(): ReactElement {
             </div>
           </div>
 
-          <div className="rounded-md border">
+          <div className="rounded-md border overflow-x-auto">
             <Table>
               <TableHeader>
                 <TableRow>

@@ -107,7 +107,7 @@ const CategoryForm = React.memo<{
 
     return (
       <form onSubmit={onSubmit} className="space-y-4">
-        <div className="grid grid-cols-2 gap-4">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
           <div className="space-y-2">
             <Label htmlFor={`${isEdit ? "edit-" : ""}name`}>Category Name</Label>
             <Input
@@ -137,7 +137,7 @@ const CategoryForm = React.memo<{
           />
         </div>
 
-        <div className="grid grid-cols-3 gap-4">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
           <div className="space-y-2">
             <Label htmlFor={`${isEdit ? "edit-" : ""}parent`}>Parent Category</Label>
             <Select value={formData.parent} onValueChange={handleSelectChange("parent")}>
@@ -604,7 +604,7 @@ export function CategoryManagement(): ReactElement {
             </div>
           </div>
 
-          <div className="rounded-md border">
+          <div className="rounded-md border overflow-x-auto">
             <Table>
               <TableHeader>
                 <TableRow>

@@ -24,8 +24,8 @@ export default function HomePage() {
 
         {/* <TrendingProducts />  */}
         <FeaturedProducts/>
-        <CategorySection />
         <BestSellingSection />
+        <CategorySection />
         <WhatsappReviewSection/>
       </main>
       <FAQSection/>
