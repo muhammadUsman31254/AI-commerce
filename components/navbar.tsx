@@ -97,7 +97,7 @@ export function Navbar() {
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
-            <Link href="/" className="text-foreground hover:text-[#7C3AED] transition-colors">Home</Link>
+            <Link href="/" className="text-foreground hover:text-[#7C3AED] transition-colors">Dashboard</Link>
             <Link href="/products" className="text-foreground hover:text-[#7C3AED] transition-colors">Products</Link>
             <Link href="/categories" className="text-foreground hover:text-[#7C3AED] transition-colors">Categories</Link>
             <Link href="/ourStory" className="text-foreground hover:text-[#7C3AED] transition-colors">Our Story</Link>

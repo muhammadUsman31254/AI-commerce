@@ -5,7 +5,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import Link from "next/link"
 
 export const metadata = {
-  title: "Register - ToddlersWorld",
+  title: "Register - AI_Commerce",
   description: "Create your account",
 }
 
@@ -18,7 +18,7 @@ export default function RegisterPage() {
           <Card>
             <CardHeader className="text-center">
               <CardTitle className="text-2xl">Create Account</CardTitle>
-              <CardDescription>Join ToddlersWorld and start shopping today</CardDescription>
+              <CardDescription>Join AI_Commerce and start selling today</CardDescription>
             </CardHeader>
             <CardContent>
               <RegisterForm />

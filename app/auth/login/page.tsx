@@ -18,7 +18,7 @@ export default function LoginPage() {
           <Card>
             <CardHeader className="text-center">
               <CardTitle className="text-2xl">Welcome Back</CardTitle>
-              <CardDescription>Sign in to your account to continue shopping</CardDescription>
+              <CardDescription>Sign in to your account to continue Selling</CardDescription>
             </CardHeader>
             <CardContent>
               <LoginForm />
